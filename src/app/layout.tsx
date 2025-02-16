@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
-import localFont from "next/font/local";
+//import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `Решу ОГЭ - Редизайн`,
-  description: `Редизайн сайта "Решу ОГЭ" для удобства подготовки к экзаменам, улучшенная навигация, современный дизайн и новые функциональные возможности.`,
-  keywords: `Решу ОГЭ, редизайн, подготовка к экзаменам, экзамены, тесты, теория, пробные экзамены, тёмная тема, прогресс, персонализированные рекомендации`,
+  title: `${mainProjectName}: ${subProjectName} - Редизайн`,
+  description: `Редизайн сайта "${subProjectName}" для удобства подготовки к экзаменам, улучшенная навигация, современный дизайн и новые функциональные возможности.`,
+  keywords: `${subProjectName}, редизайн, подготовка к экзаменам, экзамены, тесты, теория, пробные экзамены, тёмная тема, прогресс, персонализированные рекомендации`,
   robots: "index, follow",
   openGraph: {
-    title: `Решу ОГЭ - Редизайн`,
-    description: `Обновлённый сайт "Решу ОГЭ": улучшенная навигация, современный дизайн и новые функции для удобной подготовки к экзаменам.`,
+    title: `${mainProjectName}: ${subProjectName} - Редизайн`,
+    description: `Обновлённый сайт "${subProjectName}": улучшенная навигация, современный дизайн и новые функции для удобной подготовки к экзаменам.`,
     url: `https://oge.x5dfg.xyz`,
     type: "website",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: `https://oge.x5dfg.xyz/og-image.png`,
         width: 128,
         height: 128,
-        alt: `Изображение редизайна сайта "Решу ОГЭ"`,
+        alt: `Open Graph Изображение редизайна сайта "${subProjectName}"`,
       },
     ],
     siteName: `oge.x5dfg.xyz`,
